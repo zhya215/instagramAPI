@@ -1,1 +1,27 @@
 h5= item.full_name
+h5= item.owner.login
+h5= item.description
+div.row
+	a(href= item.forks_url) forks_url
+div.row
+	a(href= item.teams_url) teams_url
+div.row
+	a(href= item.hooks_url) hooks_url
+div.row
+	a(href= item.issue_events_url) issue_events_url
+div.row
+	a(href= item.assignees_url) assignees_url
+div.row
+	a(href= item.branches_url) branches_url
+div.row
+	a(href= item.tags_url) tags_url
+div.row
+	a(href= item.blobs_url) blobs_url
+div.row
+	a(href= item.git_tags_url) git_tags_url
+div.row
+	a(href= item.git_refs_url) git_refs_url
+div.row
+	a(href= item.trees_url) trees_url
+div.row
+	a(href= item.statuses_url) statuses_url
