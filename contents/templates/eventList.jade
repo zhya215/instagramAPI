@@ -1,11 +1,43 @@
 div.row
-    div.six.columns
+    div.two.columns
         h7 Type
-    div.six.columns
+    div.two.columns
         h7 Actor
+    div.two.columns
+        h7 Distinct Size
+    div.two.columns
+        h7 Size
+    div.two.columns
+        h7 RepoId
 each item in items
-    div.row 
-        div.six.columns
-            = item.type
-        div.six.columns
-            = item.actor.login
+    div.row
+        if(item.type)
+            div.two.columns
+                = item.type
+        else
+            div.two.columns
+                | NULL
+        if(item.actor.login)
+            div.two.columns
+                = item.actor.login
+        else
+            div.two.columns
+                | NULL
+        if(item.payload.distinct_size)
+            div.two.columns
+                = item.payload.distinct_size
+        else
+            div.two.columns
+                | NULL
+        if(item.payload.size)
+            div.two.columns
+                = item.payload.size
+        else
+            div.two.columns
+                | NULL
+        if(item.repo.id)
+            div.two.columns
+                = item.repo.id
+        else
+            div.two.columns
+                | NULL
