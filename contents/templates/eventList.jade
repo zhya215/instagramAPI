@@ -1,0 +1,11 @@
+div.row
+    div.six.columns
+        h7 Type
+    div.six.columns
+        h7 Actor
+each item in items
+    div.row 
+        div.six.columns
+            = item.type
+        div.six.columns
+            = item.actor.login
