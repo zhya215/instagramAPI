@@ -6,7 +6,7 @@ function myRepos(){
     $.get("https://api.github.com/users/zhya215/repos", github, function(data) {
     	var myRepos = data
 
-    	$.get("/git-jquery/templates/repoList.jade", function(template){
+    	$.get("/git-jquery/templates/myRepoList.jade", function(template){
     		// render the template
             var html = jade.render(template, {items: myRepos})            
 
@@ -15,6 +15,6 @@ function myRepos(){
 
             // load the first repo to view
             repoView(repos[0].full_name)
-    	}
-    }
+    	})
+    })
 }
