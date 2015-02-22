@@ -14,7 +14,7 @@ function myRepos(){
             $("#list").html(html)
 
             // load the first repo to view
-            repoView(repos[0].full_name)
+            repoView(myRepos[0].full_name)
     	})
     })
 }
