@@ -1,4 +1,4 @@
 ---
-title: Github Data
+title: Instagram API
 template: index.jade
 ---

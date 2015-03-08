@@ -1,7 +1,7 @@
 doctype html
 html(lang='en')
   head        
-    base(href='/git-jquery/')
+    base(href='/instagram/')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
     meta(name='viewport', content='width=device-width')     
@@ -26,10 +26,13 @@ html(lang='en')
     script(src="js/lodash.min.js")
 
     // setup github client id/secret to access the API
-    script(src="js/github.js")
+    script(src="js/access_token.js")
 
     // our app
-    script(src="js/repo/list.js")
+    script(src="js/users/list.js")
+    script(src="js/users/view.js")
+    script(src="js/medias/list.js")
+    script(src="js/medias/view.js")
     script(src="js/repo/view.js")
     script(src="js/my/events.js")
     script(src="js/my/repos.js") 

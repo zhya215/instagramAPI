@@ -1,0 +1,5 @@
+each item in items
+    div.row 
+        div.six.columns
+            a(href="#", onClick='userView("' + item.username + '")')
+                = item.full_name

@@ -1,11 +1,7 @@
-$( "#repos" ).on( "click", function( event ) {
-    repoList()
+$( "#users" ).on( "click", function( event ) {
+    usersList()
 })
 
-$( "#myrepos" ).on( "click", function( event ) {
-    myRepos()
-})
-
-$( "#myevents" ).on( "click", function( event ) {
-    myEvents()
+$( "#medias" ).on( "click", function( event ) {
+    mediasList()
 })
